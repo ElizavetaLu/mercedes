@@ -46,6 +46,9 @@ body {
 }
 
 
+.main {
+    height: calc(100vh - 310px);
+}
 
 .main > .content{
     margin: auto;
