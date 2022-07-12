@@ -45,7 +45,6 @@ body {
     right: -20px;
 }
 
-
 .main {
     height: calc(100vh - 310px);
 }
@@ -60,8 +59,16 @@ body {
 
 }
 
+
 .main > .content > .car > .main_car {
+    position: relative;
+    right: -100vw;
     width: 100%;
+    animation-name: car;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear; 
+
 }
 
 .main > .content > .price {
@@ -212,5 +219,15 @@ footer > .content > .characteristics.-last{
 }
 
 
+@keyframes car {
+    from {
+        right: -100vw;
+        opacity: 0;
+    }
 
+    to {
+        right: 0;
+        opacity: 1;
+    }
+}
 
