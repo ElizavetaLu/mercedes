@@ -1,0 +1,213 @@
+body {
+    background-color: #E9ECEF;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 100px;
+}
+
+.header > .content {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.header > .content > .left {
+    display: flex;
+    align-items: center;
+}
+
+.header > .content > .left > .text {
+    font-size: 24px;
+    font-weight: 500;
+    margin-left: 45px;
+}
+
+.header > .content > .right {
+    display: flex;
+}
+
+.header > .content > .right > .lang {
+    display: flex;
+    position: relative;
+    margin-right: 100px;
+}
+
+.header > .content > .right > .lang > .text {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.header > .content > .right > .lang > .vector > .vect {
+    position: absolute;
+    bottom: 6px;
+    right: -20px;
+}
+
+
+
+.main > .content{
+    margin: auto;
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 90px;
+
+}
+
+.main > .content > .car > .main_car {
+    width: 100%;
+}
+
+.main > .content > .price {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 65px;
+}
+
+.main > .content > .price > .amount {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.main > .content > .price > .text {
+    font-weight: 600;
+    font-size: 18px;
+    color: #6C757D;
+}
+
+.main > .content > .navig {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main > .content > .navig > .active {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #000;
+}
+
+.main > .content > .information {
+    display: none;
+}
+
+.main > .content > .information > .characteristics{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-right: 40px;
+}
+
+
+.main > .content > .button {
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+    width: 150px;
+    background-color: #343A40;
+    border-radius: 30px;
+    display: none;
+}
+
+
+
+
+
+
+
+footer > .content {
+    background-color:#CED4DA;
+    display: flex;
+    justify-content: space-around;
+    border-top: 5px solid #343A40;
+}
+
+footer > .content > .characteristics {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px 0px;
+}
+
+footer > .content > .characteristics > .first {
+    font-size: 24px;
+    font-weight: 500px;
+    color: #343A40;
+}
+
+footer > .content > .characteristics > .second {
+    font-size: 24px;
+    font-weight: 500px;
+    color: #495057;
+}
+
+footer > .content > .characteristics.-last > .text {
+    font-size: 24px;
+    font-weight: 500px;
+    margin-right: 19px;
+}
+
+footer > .content > .characteristics.-last{
+    display: flex; 
+    border-bottom: 2px solid #343A40
+}
+
+@media screen and (max-width: 720px) {
+    .header > .content > .right > .lang {
+        display: none;
+    }
+
+    .main > .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main > .content > .navig {
+        flex-direction: row;
+        margin: 60px 0px;
+    }
+
+    .main > .content > .button {
+        display: block;
+        margin-bottom: 50px;
+    }
+
+    footer > .content > .characteristics.-last {
+        display: none;
+    }
+
+    .main > .content > .information > .characteristics {
+        padding-right: 0;
+    }
+
+    .main > .content > .information {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .main > .content > .price {
+        left: 0px;
+        text-align: center;
+
+    }
+
+    body {
+        padding: 20px;
+    }
+}
+
+
+
+
